@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <!-- Enlace al CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="bg-primary text-white text-center py-5" id="Enc">
+        <h1>Bienvenido a Nuestra Agencia de Viajes</h1>
+        <p>El Destino es solo un libro más en una inmensa Bibiloteca de Posibilidades</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">>></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Destinos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Montañas</a>
+                        <a class="dropdown-item" href="#">Playas</a>
+                        <a class="dropdown-item" href="#">Ciudades</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Más Destinos</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">>></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="AcDN.html">Acerca de Nosotros</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">>></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactos</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">>></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CRUD.php">CRUD</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container mt-5">
+        <h2>Contenido Principal</h2>
+        <p>Esta es una sección de contenido en la página.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Destinos </h5>
+                        <p class="card-text">Entra Aquí para saber más acerca de los destinos que tenemos programados.</p>
+                        <details class="btn btn-primary">
+                            <summary>Más información</summary>
+                            <p>Varios de los destinos se tienen que programar con al menos 6 semanas antes de su Viaje</p>
+                            <p>Recuerde traer los documentos solicitados según su destino.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Acerca de Nosotros </h5>
+                        <p class="card-text">Más información aquí donde podras saber más acerca de nuetro sitio y propocito</p>
+                        <a href="AcDN.html" class="btn btn-primary">Sig>></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Contactos </h5>
+                        <p class="card-text">Detalles adicionales sobre el como contactar con nosotros como temas de devolució o alguna queja</p>
+                        <a href="#" class="btn btn-primary" onclick="al()">Sig>></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="swiper mySwiper container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Viaje a las Montañas</h3>
+                    <p></p>
+
+                </div>
+                <img src="imgs/1.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Viaje a unas Cuevas</h3>
+                    <p></p>
+
+                </div>
+                <img src="imgs/2.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Viaje para Senderismo</h3>
+                    <p></p>
+                    
+                </div>
+                <img src="imgs/3.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Boda en el Parque Nacional</h3>
+                    <p>Lorem ipsum dolor sit</p>
+
+                </div>
+                <img src="imgs/4.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Boda en el Parque Nacional</h3>
+                    <p>Lorem ipsum dolor sit</p>
+
+                </div>
+                <img src="imgs/5.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Boda en el Parque Nacional</h3>
+                    <p>Lorem ipsum dolor sit</p>
+
+                </div>
+                <img src="imgs/6.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Boda en el Parque Nacional</h3>
+                    <p>Lorem ipsum dolor sit</p>
+
+                </div>
+                <img src="imgs/7.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="desktop">
+        <img src="imgs/bg.png" alt="">
+    </div>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="Script.js"></script>
+    <script src="alert.js"></script>
+</body>
+</html>
