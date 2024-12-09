@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Nosotros - Agencia de Viajes</title>
+    <!-- Enlace al CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="bg-info text-white text-center py-5">
+        <h1>Acerca de Nosotros</h1>
+        <p>Conoce más sobre nuestra misión, visión y valores</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Destinos</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Montañas</a>
+                        <a class="dropdown-item" href="#">Playas</a>
+                        <a class="dropdown-item" href="#">Ciudades</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Más Destinos</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Acerca de Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de Nosotros -->
+    <div class="container mt-5">
+        <h2 class="text-center">Nuestra Historia</h2>
+        <p class="text-justify">
+            Nuestra agencia de viajes comenzó hace más de 10 años con la misión de hacer que los viajes sean accesibles y memorables para personas de todo el mundo. Desde entonces, hemos crecido para ofrecer experiencias de viaje personalizadas y paquetes a los destinos más exóticos. Con un equipo apasionado de expertos en viajes, nos dedicamos a crear experiencias inolvidables para nuestros clientes.
+        </p>
+
+        <h2 class="text-center mt-5">Nuestros Valores</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Compromiso</h5>
+                        <p class="card-text">Estamos comprometidos con la calidad y el servicio, asegurándonos de que cada viaje sea una experiencia sin preocupaciones.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Excelencia</h5>
+                        <p class="card-text">Nuestro objetivo es brindar los mejores servicios de viaje, con atención al detalle en cada itinerario.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Satisfacción</h5>
+                        <p class="card-text">Nos enfocamos en superar las expectativas de nuestros clientes y ofrecer experiencias inolvidables.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center mt-5">Nuestro Equipo</h2>
+        <p class="text-justify">
+            Contamos con un equipo de profesionales dedicados a planificar el viaje de tus sueños. Nuestro equipo está compuesto por expertos en destinos, logística y atención al cliente, quienes están disponibles para ayudarte en cada paso del camino.
+        </p>
+    </div>
+
+    <!-- Galería de imágenes con Swiper -->
+    <div class="swiper mySwiper container mt-5">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Experiencias de Playa</h3>
+                    <p>Relájate en las playas más hermosas del mundo.</p>
+                </div>
+                <img src="imgs/5.jpg" alt="Playa">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Aventuras en la Montaña</h3>
+                    <p>Disfruta del senderismo y las vistas impresionantes.</p>
+                </div>
+                <img src="imgs/1.jpg" alt="Montaña">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Escapadas Urbanas</h3>
+                    <p>Conoce las ciudades más emocionantes del mundo.</p>
+                </div>
+                <img src="imgs/2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap y Swiper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializar Swiper
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>

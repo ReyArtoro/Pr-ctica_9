@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-image: url('imgs/In.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+    color: #fff; /* Color de texto blanco para mayor contraste */
+}
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para el contenido */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar el contenedor */
+    margin-top: 40px; /* Espacio desde la parte superior */
+}
+
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff; /* Líneas debajo del navbar */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff !important;
+}
+
+.navbar .nav-link:hover {
+    color: #FFD700 !important; /* Efecto de hover dorado */
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente en la tabla */
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Sombra suave para la tabla */
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #fff; /* Borde blanco para las celdas */
+}
+
+.table th {
+    background-color: #333; /* Fondo oscuro para las cabeceras */
+    color: #FFD700; /* Color dorado para el texto de la cabecera */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo semitransparente en celdas */
+}
+
+.table tr:nth-child(even) td {
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo alterno para las filas */
+}
+
+.table tr:hover {
+    background-color: rgba(255, 215, 0, 0.2); /* Efecto hover en filas */
+}
+
+.table .btn {
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.table .btn:hover {
+    background-color: #ffcc00; /* Efecto de hover en botones */
+}
+
+.swiper-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    height: 420px;
+    width: 295px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+.swiper-txt {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra de texto para legibilidad */
+}
+
+.swiper-txt h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.desktop {
+    text-align: center;
+    z-index: 1;
+    padding: 30px;
+}
+
+.desktop img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.desktop img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+@media(max-width: 768px) {
+    .navbar {
+        padding: 30px;
+    }
+
+    .swiper-container {
+        padding: 0 20px;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .desktop img {
+        width: 100%;
+    }
+}
+
+.bg-primary {
+    background-image: url('imgs/In.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra externa */
+    text-align: center;
+}
+
+.bg-primary h1 {
+    color: #FFD700;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.bg-primary p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+}
